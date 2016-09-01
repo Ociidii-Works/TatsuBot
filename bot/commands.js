@@ -1781,19 +1781,19 @@ var commands = {
                 }
                 if(rating < 100)
                 {
-                    toSend.push("Crime Coefficient:("+rating+"%) **"+suffix+"** is not a target for enforcement action. The trigger of the Dominator will be locked.");
+                    toSend.push("Crime Coefficient:("+rating+") **"+suffix+"** is not a target for enforcement action. The trigger of the Dominator will be locked.");
                 }
                 else if(rating < 300)
                 {
-                    toSend.push("Crime Coefficient:("+rating+"%) **"+suffix+"** is classified as a latent criminal and is a target for enforcement action. The Dominator is set to Non-Lethal Paralyzer mode.");
+                    toSend.push("Crime Coefficient:("+rating+") **"+suffix+"** is classified as a latent criminal and is a target for enforcement action. The Dominator is set to Non-Lethal Paralyzer mode.");
                 }
                 else if(rating < 400)
                 {
-                    toSend.push("Crime Coefficient:("+rating+"%) **"+suffix+"** poses a serious threat to the society. Lethal force is authorized. The Dominator will automatically switch to Lethal Eliminator.");
+                    toSend.push("Crime Coefficient:("+rating+") **"+suffix+"** poses a serious threat to the society. Lethal force is authorized. The Dominator will automatically switch to Lethal Eliminator.");
                 }
                 else
                 {
-                    toSend.push("Crime Coefficient:("+rating+"%). Enforcement mode is Destroy Decomposer; **"+suffix+"** will be completely eliminated. Please be careful.");
+                    toSend.push("Crime Coefficient:("+rating+"). Enforcement mode is Destroy Decomposer; **"+suffix+"** will be completely eliminated. Please be careful.");
                 }
                
                 bot.sendMessage(msg.channel, toSend);
